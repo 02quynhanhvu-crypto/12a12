@@ -21,7 +21,7 @@ html, body {
     flex: 0 0 auto; 
     width: 100%;
     background-color: lightgray;
-    background: url("image/logonq.JPG") center/100%
+    background: url("images/logonq.JPG")center/100%
 }
 
 .header img {
