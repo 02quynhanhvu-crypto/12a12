@@ -17,16 +17,16 @@ html, body {
 }
 
 
-.header {
-    flex: 0 0 auto; 
-    width: 100%;
-    background-color: lightgray;
-    
+.header{
+    width:100%;
+    height:600px;
+    overflow:hidden;
 }
 
 .header img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
