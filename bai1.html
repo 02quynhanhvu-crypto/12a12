@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Hội thao</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <h2>Đăng kí tham gia Hội thao</h2>
+
+            <div class="row">
+                <label for="hoten">Họ và tên:</label>
+                <input type="text" id="hoten" name="hoten">
+            </div>
+
+            <div class="row">
+                <label for="email">Địa chỉ email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="row">
+                <!-- Chọn lớp: Chỉ được chọn 1 -->
+                <input type="radio" name="lop" value="10" id="l10"> <label style="width:auto" for="l10">Lớp 10</label>
+                <input type="radio" name="lop" value="11" id="l11"> <label style="width:auto" for="l11">Lớp 11</label>
+                <input type="radio" name="lop" value="12" id="l12"> <label style="width:auto" for="l12">Lớp 12</label>
+            </div>
+
+            <div class="sports-list">
+                <strong>Tham dự môn:</strong><br>
+                <!-- Lưu ý: Cùng thuộc tính name="mon_hoc" để chỉ chọn được 1 môn -->
+                <input type="radio" name="mon_hoc" value="bong_ban" id="bb"> <label style="width:auto" for="bb">Bóng bàn</label><br>
+                <input type="radio" name="mon_hoc" value="cau_long" id="cl"> <label style="width:auto" for="cl">Cầu lông</label><br>
+                <input type="radio" name="mon_hoc" value="co_vua" id="cv"> <label style="width:auto" for="cv">Cờ vua</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Đăng kí</button>
+                <button type="reset">Hủy bỏ</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
