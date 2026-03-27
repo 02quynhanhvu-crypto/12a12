@@ -2,41 +2,48 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Đăng ký Hội Thao</title>
+    <title>Đăng kí Hội thao</title>
 </head>
 <body>
 
-    <h2>Biểu mẫu đăng ký tham gia Hội Thao</h2>
+    <h2>Đăng kí tham gia Hội thao</h2>
 
     <form>
+
+        <!-- Họ tên -->
         <p>
-            <label>Họ và tên:</label><br>
-            <input type="text" name="name" required>
+            Họ và tên:
+            <input type="text" name="hoten">
         </p>
 
+        <!-- Email -->
         <p>
-            <label>Lớp:</label><br>
-            <input type="text" name="class" required>
+            Địa chỉ email:
+            <input type="email" name="email">
         </p>
 
+        <!-- Lớp -->
         <p>
-            <label>Số điện thoại:</label><br>
-            <input type="tel" name="phone" required>
+            <input type="radio" name="lop" value="10"> Lớp 10
+            <input type="radio" name="lop" value="11"> Lớp 11
+            <input type="radio" name="lop" value="12"> Lớp 12
         </p>
 
-        <p>
-            <label>Môn thi đấu:</label><br>
-            <select name="sport">
-                <option>Bóng đá</option>
-                <option>Bóng chuyền</option>
-                <option>Cầu lông</option>
-                <option>Chạy</option>
-            </select>
-        </p>
+        <!-- Môn -->
+        <p>Tham dự môn:</p>
 
         <p>
-            <button type="submit">Đăng ký</button>
+            <input type="checkbox" name="mon" value="Bóng bàn"> Bóng bàn<br>
+            <input type="checkbox" name="mon" value="Cầu lông"> Cầu lông<br>
+            <input type="checkbox" name="mon" value="Cờ vua"> Cờ vua
         </p>
+
+        <!-- Nút -->
+        <p>
+            <input type="submit" value="Đăng kí">
+            <input type="reset" value="Hủy bỏ">
+        </p>
+
     </form>
 
 </body>
